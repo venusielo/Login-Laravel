@@ -1,0 +1,23 @@
+# Laravel
+/vendor
+/node_modules
+/.phpunit.result.cache
+/.vscode
+/.env
+/.idea
+/public/storage
+/storage/*.key
+/storage/debugbar/*
+/npm-debug.log
+/yarn-error.log
+
+# Laravel 8 and newer
+/.env.local
+/.env.testing
+
+# Jetstream & Breeze
+/public/hot
+/public/css
+/public/js
+/public/mix-manifest.json
+
