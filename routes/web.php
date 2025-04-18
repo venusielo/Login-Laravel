@@ -9,6 +9,7 @@ use Illuminate\Foundation\Auth\EmailVerificationRequest;
 use Illuminate\Http\Request;
 
 
+
 Route::get('login/google', [GoogleController::class, 'redirectToGoogle']);
 
 Route::get('login/google/callback', [GoogleController::class, 'handleGoogleCallback']);
@@ -21,7 +22,7 @@ Route::get('/reset-password/{token}', [ResetPasswordController::class, 'showRese
 
 Route::post('/reset-password', [ResetPasswordController::class, 'reset'])->name('password.update');
 
-Route::get('/email/verify', function () {
+Route::get('/email/verify', function () {   
     return view('auth.verify-email'); 
 })->middleware('auth')->name('verification.notice');
 
